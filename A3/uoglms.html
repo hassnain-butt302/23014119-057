@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UoG LMS - University of Gujrat Learning Management System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header with UoG Branding -->
+  <header class="bg-blue-900 text-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="images/uog logo.jpeg" alt="University of Ghana Logo" class="h-12">
+        <div class="hidden md:block">
+          <h1 class="text-xl font-bold">University of Gujrat</h1>
+          <p class="text-sm">Learning Management System</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <input type="text" placeholder="Search courses..." class="pl-10 pr-4 py-2 rounded-full text-sm text-gray-800 focus:outline-none">
+          <i class="fas fa-search absolute left-3 top-2.5 text-gray-500"></i>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
+          <span class="hidden md:inline">Hassnain</span>
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <div class="flex">
+    <!-- Sidebar Navigation -->
+    <aside class="w-64 bg-white shadow-md h-screen sticky top-0">
+      <nav class="p-4">
+        <div class="mb-8">
+          <h2 class="text-lg font-semibold text-gray-700 mb-2">Main Menu</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded bg-blue-100 text-blue-800">
+                <i class="fas fa-home w-5"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <i class="fas fa-book w-5"></i>
+                <span>My Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <i class="fas fa-calendar-alt w-5"></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <i class="fas fa-envelope w-5"></i>
+                <span>Messages</span>
+                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <i class="fas fa-file-alt w-5"></i>
+                <span>Assignments</span>
+              </a>
+            </li>
+            <li>
+              <a href="grades.html" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <i class="fas fa-chart-bar w-5"></i>
+                <span>Grades</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h2 class="text-lg font-semibold text-gray-700 mb-2">Current Courses</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white text-xs">CS</div>
+                <span>Computer Science 101</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white text-xs">MA</div>
+                <span>Mathematics 202</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
+                <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center text-white text-xs">PH</div>
+                <span>Physics 101</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <div class="mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Welcome back, Hassnain</h1>
+        <p class="text-gray-600">Here's what's happening in your courses today</p>
+      </div>
+
+      <!-- Dashboard Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500">Active Courses</p>
+              <h3 class="text-2xl font-bold">3</h3>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+              <i class="fas fa-book text-blue-600 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500">Pending Assignments</p>
+              <h3 class="text-2xl font-bold">2</h3>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+              <i class="fas fa-file-alt text-orange-600 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500">Unread Messages</p>
+              <h3 class="text-2xl font-bold">3</h3>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+              <i class="fas fa-envelope text-purple-600 text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500">Upcoming Events</p>
+              <h3 class="text-2xl font-bold">1</h3>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+              <i class="fas fa-calendar-alt text-green-600 text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcoming Assignments -->
+      <div class="bg-white rounded-lg shadow p-6 mb-8">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold text-gray-800">Upcoming Assignments</h2>
+          <a href="#" class="text-blue-600 hover:underline">View All</a>
+        </div>
+        
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Course</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Assignment</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Due Date</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white text-xs mr-3">CS</div>
+                    <div>Computer Science 101</div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">Programming Project</td>
+                <td class="px-6 py-4 whitespace-nowrap">May 15, 2023</td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <a href="#" class="text-blue-600 hover:underline">Submit</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white text-xs mr-3">MA</div>
+                    <div>Mathematics 202</div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">Calculus Problems</td>
+                <td class="px-6 py-4 whitespace-nowrap">May 18, 2023</td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <a href="#" class="text-blue-600 hover:underline">Submit</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Recent Announcements -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold text-gray-800">Recent Announcements</h2>
+          <a href="#" class="text-blue-600 hover:underline">View All</a>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="border-l-4 border-blue-500 pl-4 py-2">
+            <h3 class="font-semibold text-gray-800">Mid-Semester Exams Schedule</h3>
+            <p class="text-sm text-gray-600 mb-1">Posted by Dr. Mensah in Computer Science 101 - May 5, 2023</p>
+            <p class="text-gray-700">The mid-semester exams will begin on May 20th. Please check the schedule on the notice board...</p>
+          </div>
+          
+          <div class="border-l-4 border-green-500 pl-4 py-2">
+            <h3 class="font-semibold text-gray-800">Change of Venue for Mathematics Tutorials</h3>
+            <p class="text-sm text-gray-600 mb-1">Posted by Prof. Asante in Mathematics 202 - May 3, 2023</p>
+            <p class="text-gray-700">All Mathematics 202 tutorials will now be held in the New Science Block, Room 205...</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <img src="https://www.ug.edu.gh/sites/all/themes/ug/images/logo.svg" alt="University of Ghana Logo" class="h-10">
+          <p class="mt-2 text-sm">University of Ghana Learning Management System</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-blue-300">Help Center</a>
+          <a href="#" class="hover:text-blue-300">Contact Support</a>
+          <a href="#" class="hover:text-blue-300">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-blue-800 text-center text-sm">
+        <p>&copy; 2023 University of Ghana. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
