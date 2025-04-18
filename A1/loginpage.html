@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UOG Login Page</title>
+    <link rel="stylesheet" href="loginpage.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <img src="../images/logo2.png" alt="UOG Logo" class="header-logo" />
+    </header>
+
+    <!-- Main content -->
+    <main class="main-container">
+      <!-- Left Content -->
+      <div class="left-content">
+        <!-- Alert -->
+        <div class="alert-section">Alert</div>
+        <p class="alert-message">
+          Dear admission applicant please use your own CNIC/B-Form no for
+          registration of application in Admission portal.<br />
+          This registration is for portal id only. However multiple applications
+          are allowed.
+        </p>
+
+        <!-- Admission Guide -->
+        <h2 class="section-title">
+          Admission Guidelines & Application Process
+        </h2>
+        <div class="video-container">
+          <iframe
+            class="video-iframe"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Visiting Jobs -->
+        <h2 class="section-title">Visiting Jobs</h2>
+        <p class="section-text">
+          Dear applicant please use your own CNIC/B-Form no for registration of
+          application in Job portal.
+        </p>
+        <div class="image-container">
+          <img
+            class="campus-image"
+            src="https://uog.edu.pk/uog/img/University-Of-Gujrat.jpg"
+            alt="Campus"
+          />
+        </div>
+      </div>
+
+      <!-- Right Login Form -->
+      <div class="login-form">
+        <div class="form-group">
+          <label class="form-label">Sign in using:</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="signin_option"
+                value="email"
+                class="radio-input"
+              />
+              Email
+            </label>
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="signin_option"
+                value="cnic"
+                class="radio-input"
+              />
+              CNIC
+            </label>
+          </div>
+        </div>
+        <h2 class="form-title">Login/Registration</h2>
+        <form class="login-form-container">
+          <label class="form-label">CNIC/B-Form No</label>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Enter CNIC/B-Form"
+          />
+
+          <label class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-input"
+            placeholder="Enter Password"
+          />
+
+          <button type="submit" class="submit-button">Sign In</button>
+        </form>
+        <div class="forgot-password">
+          <a href="#" class="password-link">Forgot Password?</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="../javascript/loginpage.js"></script>
+  </body>
+</html>

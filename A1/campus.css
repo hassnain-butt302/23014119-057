@@ -1,0 +1,269 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        padding: 0 48px;
+    }
+}
+
+.logo-container {
+    padding-left: 16px;
+}
+
+@media (min-width: 768px) {
+    .logo-container {
+        padding-left: 30px;
+    }
+}
+
+.logo {
+    width: 100%;
+    height: 94px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+    .nav-container {
+        padding-right: 20px;
+    }
+}
+
+.top-nav, .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    color: #ADADAD;
+    font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    .top-nav, .main-nav {
+        gap: 24px;
+    }
+}
+
+.main-nav {
+    color: #888888;
+    font-weight: bold;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+    .main-nav {
+        padding-bottom: 32px;
+        padding-right: 50px;
+    }
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #3b82f6;
+}
+
+/* Page Title */
+.page-title-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .page-title-container {
+        padding: 0 80px;
+    }
+}
+
+.page-title {
+    background-color: #333F77;
+    height: 50px;
+    color: white;
+    padding-left: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Campuses Section */
+.campuses-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .campuses-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.campus-card {
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.campus-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #f97316;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.info-label {
+    font-weight: 600;
+}
+
+.info-link {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+.map-placeholder {
+    margin-top: 16px;
+    width: 100%;
+    height: 256px;
+    background-color: #edf2f7;
+    border: 1px solid #cbd5e0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.map-content {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #4a5568;
+    font-size: 12px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .map-content {
+        width: 288px;
+    }
+}
+
+.map-content iframe {
+    border: 0;
+    width: 100%;
+    height: 180px;
+}
+
+.map-button {
+    border: 1px solid #e2e8f0;
+    padding: 4px 16px;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.map-note {
+    margin-top: 8px;
+    color: #718096;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 24px 0;
+}
+
+@media (min-width: 768px) {
+    .main-footer {
+        padding: 40px 0;
+    }
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-column h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    font-size: 14px;
+    color: #d1d5db;
+    margin-bottom: 8px;
+}
+
+.footer-icon {
+    display: inline-block;
+    margin-right: 8px;
+}
